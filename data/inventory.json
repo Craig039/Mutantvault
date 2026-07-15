@@ -12,7 +12,8 @@
     "keyDetails": "Second appearance of Polaris. Steranko cover. Origin of the Beast.",
     "presentation": "High-grade example with strong color and premium shelf presence.",
     "frontImage": "",
-    "backImage": ""
+    "backImage": "",
+    "featured": true
   },
   {
     "slug": "x-men-55-cgc-80",
@@ -27,7 +28,8 @@
     "keyDetails": "Barry Windsor-Smith artwork and classic Silver Age X-Men appeal.",
     "presentation": "Well-presenting mid-to-high grade copy with clean overall eye appeal.",
     "frontImage": "",
-    "backImage": ""
+    "backImage": "",
+    "featured": false
   },
   {
     "slug": "x-men-101-cgc-80",
@@ -42,7 +44,8 @@
     "keyDetails": "Origin and first appearance of Phoenix.",
     "presentation": "Iconic Bronze Age key with bright color and strong collector demand.",
     "frontImage": "",
-    "backImage": ""
+    "backImage": "",
+    "featured": false
   },
   {
     "slug": "x-men-4-cgc-55",
@@ -57,6 +60,7 @@
     "keyDetails": "First appearances of Scarlet Witch, Quicksilver, Toad, and the Brotherhood of Evil Mutants.",
     "presentation": "Classic early Silver Age key previously offered by Mutant Vault.",
     "frontImage": "",
-    "backImage": ""
+    "backImage": "",
+    "featured": false
   }
 ]

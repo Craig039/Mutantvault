@@ -41,3 +41,9 @@ To add a comic image:
 ## Current image placeholders
 
 The initial sample listings intentionally use placeholders until the actual front and back slab photographs are added.
+
+
+## Version 2.1
+- Cleaner MV wordmark in the header.
+- Data-driven featured comic on the homepage.
+- Set `featured: true` in `data/inventory.json` and add a `frontImage` path to change the featured book.
