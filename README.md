@@ -47,3 +47,12 @@ The initial sample listings intentionally use placeholders until the actual fron
 - Cleaner MV wordmark in the header.
 - Data-driven featured comic on the homepage.
 - Set `featured: true` in `data/inventory.json` and add a `frontImage` path to change the featured book.
+
+
+## Version 2.2 corrections
+
+- Fixed the clipped Featured Comic heading.
+- Fixed overlapping trust-strip icons and labels.
+- Reduced the oversized homepage headline.
+- Improved featured-comic spacing and text wrapping.
+- Added safer tablet and mobile breakpoints.
