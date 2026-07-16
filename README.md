@@ -56,3 +56,26 @@ The initial sample listings intentionally use placeholders until the actual fron
 - Reduced the oversized homepage headline.
 - Improved featured-comic spacing and text wrapping.
 - Added safer tablet and mobile breakpoints.
+
+
+## Version 3 additions
+
+- Replaced the homepage trust strip with a live New Arrivals row.
+- Added an individual detail page for every comic.
+- Added support for multiple images per comic.
+- Added desktop hover magnification.
+- Added a full-screen gallery with keyboard navigation.
+- Added tablet/mobile tap-to-view behavior.
+
+### Adding photos
+
+Put the files in `public/inventory/`, then use an `images` array:
+
+```json
+"images": [
+  "/inventory/x-men-50-front.jpg",
+  "/inventory/x-men-50-back.jpg",
+  "/inventory/x-men-50-label.jpg",
+  "/inventory/x-men-50-spine.jpg"
+]
+```

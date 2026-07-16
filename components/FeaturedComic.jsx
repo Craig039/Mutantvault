@@ -11,9 +11,9 @@ export default function FeaturedComic({ comic }) {
 
       <div className="featured-grid">
         <div className="featured-image-wrap">
-          {comic.frontImage ? (
+          {comic.images?.[0] ? (
             <img
-              src={comic.frontImage}
+              src={comic.images?.[0]}
               alt={`${comic.title} front cover`}
               className="featured-image"
             />
