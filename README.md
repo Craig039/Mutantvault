@@ -1,81 +1,24 @@
-# Mutant Vault Website — Version 2
+# Mutant Vault — Production Website
 
-A modern Next.js website for Mutant Vault, designed for deployment on Vercel.
+This is the complete Next.js project for mutantvault.com.
 
-## Included
+## Deploy
 
-- Responsive homepage
-- Available inventory page
-- Sold archive
-- About page
-- Contact page
-- Mutant Vault logo system
-- SEO metadata and social sharing image
-- Data-driven comic inventory
+1. Replace the contents of your local GitHub repository with this package.
+2. In GitHub Desktop, commit the changes and push to `main`.
+3. Vercel will deploy automatically.
 
-## Local development
+## Add a comic
 
-```bash
-npm install
-npm run dev
-```
+1. Put all images in `public/inventory/` using simple names, such as:
+   - `x-men-50-front.jpg`
+   - `x-men-50-back.jpg`
+   - `x-men-50-label.jpg`
+2. Add one object to `data/inventory.json`.
+3. Add image paths to the `images` array.
+4. Set `featured` to `true` for only one available book.
+5. Change `status` to `sold` to move a comic to the Sold Archive.
 
-Open `http://localhost:3000`.
+## Photo quality
 
-## Deployment
-
-Import this repository into Vercel. Vercel will detect Next.js automatically.
-
-## Updating inventory
-
-Edit:
-
-`data/inventory.json`
-
-To add a comic image:
-
-1. Place the image in `public/inventory/`
-2. Set `frontImage` to `/inventory/your-file-name.jpg`
-3. Commit the changes to GitHub
-
-## Current image placeholders
-
-The initial sample listings intentionally use placeholders until the actual front and back slab photographs are added.
-
-
-## Version 2.1
-- Cleaner MV wordmark in the header.
-- Data-driven featured comic on the homepage.
-- Set `featured: true` in `data/inventory.json` and add a `frontImage` path to change the featured book.
-
-
-## Version 2.2 corrections
-
-- Fixed the clipped Featured Comic heading.
-- Fixed overlapping trust-strip icons and labels.
-- Reduced the oversized homepage headline.
-- Improved featured-comic spacing and text wrapping.
-- Added safer tablet and mobile breakpoints.
-
-
-## Version 3 additions
-
-- Replaced the homepage trust strip with a live New Arrivals row.
-- Added an individual detail page for every comic.
-- Added support for multiple images per comic.
-- Added desktop hover magnification.
-- Added a full-screen gallery with keyboard navigation.
-- Added tablet/mobile tap-to-view behavior.
-
-### Adding photos
-
-Put the files in `public/inventory/`, then use an `images` array:
-
-```json
-"images": [
-  "/inventory/x-men-50-front.jpg",
-  "/inventory/x-men-50-back.jpg",
-  "/inventory/x-men-50-label.jpg",
-  "/inventory/x-men-50-spine.jpg"
-]
-```
+Use web copies approximately 2400–3000 pixels tall at JPEG quality 90–95. Keep your full-resolution originals separately.

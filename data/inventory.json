@@ -6,14 +6,16 @@
     "year": "1968",
     "grade": "CGC 9.6",
     "pages": "Off-White to White",
+    "certNumber": "4748401017",
     "price": "$2,750 shipped",
+    "numericPrice": 2750,
     "status": "available",
     "badge": "Featured",
+    "featured": true,
+    "arrivalOrder": 4,
     "keyDetails": "Second appearance of Polaris. Steranko cover. Origin of the Beast.",
     "presentation": "High-grade example with strong color and premium shelf presence.",
-    "featured": true,
-    "images": [],
-    "arrivalOrder": 1
+    "images": []
   },
   {
     "slug": "x-men-55-cgc-80",
@@ -22,14 +24,16 @@
     "year": "1969",
     "grade": "CGC 8.0",
     "pages": "Off-White",
+    "certNumber": "4576672006",
     "price": "$150 shipped",
+    "numericPrice": 150,
     "status": "available",
     "badge": "New Arrival",
-    "keyDetails": "Barry Windsor-Smith artwork and classic Silver Age X-Men appeal.",
-    "presentation": "Well-presenting mid-to-high grade copy with clean overall eye appeal.",
     "featured": false,
-    "images": [],
-    "arrivalOrder": 2
+    "arrivalOrder": 3,
+    "keyDetails": "Barry Windsor-Smith artwork and classic Silver Age X-Men appeal.",
+    "presentation": "Well-presenting copy with clean overall eye appeal.",
+    "images": []
   },
   {
     "slug": "x-men-101-cgc-80",
@@ -38,14 +42,16 @@
     "year": "1976",
     "grade": "CGC 8.0",
     "pages": "White",
+    "certNumber": "",
     "price": "$650 shipped",
+    "numericPrice": 650,
     "status": "available",
     "badge": "Key Issue",
+    "featured": false,
+    "arrivalOrder": 2,
     "keyDetails": "Origin and first appearance of Phoenix.",
     "presentation": "Iconic Bronze Age key with bright color and strong collector demand.",
-    "featured": false,
-    "images": [],
-    "arrivalOrder": 3
+    "images": []
   },
   {
     "slug": "x-men-4-cgc-55",
@@ -54,13 +60,15 @@
     "year": "1964",
     "grade": "CGC 5.5",
     "pages": "Off-White to White",
-    "price": "Inquire",
+    "certNumber": "4432487019",
+    "price": "Sold",
+    "numericPrice": 0,
     "status": "sold",
     "badge": "Sold",
+    "featured": false,
+    "arrivalOrder": 1,
     "keyDetails": "First appearances of Scarlet Witch, Quicksilver, Toad, and the Brotherhood of Evil Mutants.",
     "presentation": "Classic early Silver Age key previously offered by Mutant Vault.",
-    "featured": false,
-    "images": [],
-    "arrivalOrder": 4
+    "images": []
   }
 ]
