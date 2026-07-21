@@ -14,14 +14,13 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="shell hero-grid">
+        <div className="shell hero-shell hero-grid">
           <div className="hero-copy">
             <div className="hero-monogram" aria-hidden="true">MV</div>
             <h1>For collectors, curated by a collector.</h1>
             <p className="hero-text">
-              Certified X-Men comics hand-selected for eye appeal and presented
-              with detailed photographs of the exact book offered. Listed prices
-              include secure, tracked, insured U.S. shipping.
+              Certified X-Men comics hand-selected for eye appeal, photographed
+              exactly as offered, and shipped securely with tracking and insurance.
             </p>
             <div className="button-row">
               <Link className="button primary" href="/inventory">
