@@ -1,74 +1,70 @@
 [
   {
-    "slug": "x-men-50-cgc-96",
-    "title": "X-Men #50",
+    "slug": "x-men-4-cgc-55-4118256002",
+    "title": "X-Men #4",
+    "issue": 4,
     "publisher": "Marvel Comics",
-    "year": "1968",
-    "grade": "CGC 9.6",
+    "year": "1964",
+    "issueDate": "March 1964",
+    "grade": "CGC 5.5",
     "pages": "Off-White to White",
-    "certNumber": "4748401017",
-    "price": "$2,750 shipped",
-    "numericPrice": 2750,
+    "certNumber": "4118256002",
+    "price": "$1,800 shipped",
+    "numericPrice": 1800,
     "status": "available",
     "badge": "Featured",
     "featured": true,
-    "arrivalOrder": 4,
-    "keyDetails": "Second appearance of Polaris. Steranko cover. Origin of the Beast.",
-    "presentation": "High-grade example with strong color and premium shelf presence.",
-    "images": []
+    "arrivalOrder": 2,
+    "keyDetails": "First appearances of Quicksilver, Scarlet Witch, Toad, and the Brotherhood of Evil Mutants. Second appearance of Magneto.",
+    "credits": "Stan Lee story. Jack Kirby and Paul Reinman cover and art.",
+    "presentation": "A major early Silver Age X-Men key with vivid red and yellow cover color, strong character presentation, and attractive overall eye appeal for the assigned grade.",
+    "images": [
+      {
+        "display": "/inventory/x-men-4-cgc-55-4118256002/front-display.jpg",
+        "full": "/inventory/x-men-4-cgc-55-4118256002/front-full.jpg",
+        "thumb": "/inventory/x-men-4-cgc-55-4118256002/front-thumb.jpg",
+        "alt": "X-Men #4 CGC 5.5 front cover and CGC label"
+      },
+      {
+        "display": "/inventory/x-men-4-cgc-55-4118256002/back-display.jpg",
+        "full": "/inventory/x-men-4-cgc-55-4118256002/back-full.jpg",
+        "thumb": "/inventory/x-men-4-cgc-55-4118256002/back-thumb.jpg",
+        "alt": "X-Men #4 CGC 5.5 back cover and CGC label"
+      }
+    ]
   },
   {
-    "slug": "x-men-55-cgc-80",
-    "title": "X-Men #55",
+    "slug": "x-men-9-cgc-75-4675887015",
+    "title": "X-Men #9",
+    "issue": 9,
     "publisher": "Marvel Comics",
-    "year": "1969",
-    "grade": "CGC 8.0",
+    "year": "1965",
+    "issueDate": "January 1965",
+    "grade": "CGC 7.5",
     "pages": "Off-White",
-    "certNumber": "4576672006",
-    "price": "$150 shipped",
-    "numericPrice": 150,
+    "certNumber": "4675887015",
+    "price": "$625 shipped",
+    "numericPrice": 625,
     "status": "available",
     "badge": "New Arrival",
     "featured": false,
     "arrivalOrder": 3,
-    "keyDetails": "Barry Windsor-Smith artwork and classic Silver Age X-Men appeal.",
-    "presentation": "Well-presenting copy with clean overall eye appeal.",
-    "images": []
-  },
-  {
-    "slug": "x-men-101-cgc-80",
-    "title": "X-Men #101",
-    "publisher": "Marvel Comics",
-    "year": "1976",
-    "grade": "CGC 8.0",
-    "pages": "White",
-    "certNumber": "",
-    "price": "$650 shipped",
-    "numericPrice": 650,
-    "status": "available",
-    "badge": "Key Issue",
-    "featured": false,
-    "arrivalOrder": 2,
-    "keyDetails": "Origin and first appearance of Phoenix.",
-    "presentation": "Iconic Bronze Age key with bright color and strong collector demand.",
-    "images": []
-  },
-  {
-    "slug": "x-men-4-cgc-55",
-    "title": "X-Men #4",
-    "publisher": "Marvel Comics",
-    "year": "1964",
-    "grade": "CGC 5.5",
-    "pages": "Off-White to White",
-    "certNumber": "4432487019",
-    "price": "Sold",
-    "numericPrice": 0,
-    "status": "sold",
-    "badge": "Sold",
-    "featured": false,
-    "arrivalOrder": 1,
-    "keyDetails": "First appearances of Scarlet Witch, Quicksilver, Toad, and the Brotherhood of Evil Mutants.",
-    "presentation": "Classic early Silver Age key previously offered by Mutant Vault.",
-    "images": []
+    "keyDetails": "First meeting of the X-Men and the Avengers. First appearance of Lucifer. Marvel Girl pin-up.",
+    "credits": "Stan Lee story. Jack Kirby and Chic Stone cover and art.",
+    "presentation": "A sharp mid-high-grade example with strong color, clean registration, and excellent overall presentation. The full slab and CGC label are clearly shown in the gallery.",
+    "images": [
+      {
+        "display": "/inventory/x-men-9-cgc-75-4675887015/front-display.jpg",
+        "full": "/inventory/x-men-9-cgc-75-4675887015/front-full.jpg",
+        "thumb": "/inventory/x-men-9-cgc-75-4675887015/front-thumb.jpg",
+        "alt": "X-Men #9 CGC 7.5 front cover and CGC label"
+      },
+      {
+        "display": "/inventory/x-men-9-cgc-75-4675887015/back-display.jpg",
+        "full": "/inventory/x-men-9-cgc-75-4675887015/back-full.jpg",
+        "thumb": "/inventory/x-men-9-cgc-75-4675887015/back-thumb.jpg",
+        "alt": "X-Men #9 CGC 7.5 back cover and CGC label"
+      }
+    ]
   }
 ]

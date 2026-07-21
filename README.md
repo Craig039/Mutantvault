@@ -1,24 +1,23 @@
-# Mutant Vault — Production Website
+# Mutant Vault Version 4
 
-This is the complete Next.js project for mutantvault.com.
+Production Next.js site for Mutant Vault.
 
-## Deploy
+## Version 4 includes
+- X-Men #4 CGC 5.5 at $1,800 shipped as the featured comic
+- X-Men #9 CGC 7.5 at $625 shipped as the newest arrival
+- Exact front-and-back slab photographs
+- Separate thumbnail, display, and full-resolution image files
+- Hover magnifier on desktop
+- Full-screen image viewer with zoom controls, keyboard arrows, and mobile swipe navigation
+- Searchable inventory and individual product pages
+- Product structured data, sitemap, robots file, and page metadata
+- Responsive desktop and mobile layouts
 
-1. Replace the contents of your local GitHub repository with this package.
-2. In GitHub Desktop, commit the changes and push to `main`.
-3. Vercel will deploy automatically.
+## Publish through GitHub Desktop
+1. Extract this ZIP.
+2. Copy all files and folders into the local Mutant Vault repository, replacing matching files.
+3. In GitHub Desktop, commit with: `Launch Mutant Vault Version 4`
+4. Click **Push origin**.
+5. Vercel will redeploy automatically.
 
-## Add a comic
-
-1. Put all images in `public/inventory/` using simple names, such as:
-   - `x-men-50-front.jpg`
-   - `x-men-50-back.jpg`
-   - `x-men-50-label.jpg`
-2. Add one object to `data/inventory.json`.
-3. Add image paths to the `images` array.
-4. Set `featured` to `true` for only one available book.
-5. Change `status` to `sold` to move a comic to the Sold Archive.
-
-## Photo quality
-
-Use web copies approximately 2400–3000 pixels tall at JPEG quality 90–95. Keep your full-resolution originals separately.
+Do not upload the outer extracted folder as a nested folder. `package.json`, `app`, `components`, `data`, and `public` must be at the repository root.
