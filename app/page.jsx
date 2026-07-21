@@ -16,11 +16,7 @@ export default function Home() {
       <section className="hero">
         <div className="shell hero-grid">
           <div className="hero-copy">
-            <img
-              className="hero-brand-logo"
-              src="/brand/mutant-vault-primary.png"
-              alt="Mutant Vault — curated high-grade X-Men and Marvel comics"
-            />
+            <div className="hero-monogram" aria-hidden="true">MV</div>
             <h1>For collectors, curated by a collector.</h1>
             <p className="hero-text">
               Certified X-Men comics hand-selected for eye appeal and presented
