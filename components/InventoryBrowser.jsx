@@ -11,6 +11,17 @@ const numericGrade = (grade = "") => {
 const priceValue = (comic, fallback) =>
   typeof comic.numericPrice === "number" ? comic.numericPrice : fallback;
 
+const normalizeSearch = (value = "") =>
+  String(value)
+    .toLowerCase()
+    .replace(/#/g, "")
+    .replace(/[-–—_]/g, " ")
+    .replace(/[^a-z0-9.\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const compactSearch = (value = "") => normalizeSearch(value).replace(/\s+/g, "");
+
 export default function InventoryBrowser({ comics }) {
   const [q, setQ] = useState("");
   const [sort, setSort] = useState("issue-low");
@@ -27,10 +38,14 @@ export default function InventoryBrowser({ comics }) {
   );
 
   const filtered = useMemo(() => {
-    const term = q.toLowerCase().trim();
+    const term = normalizeSearch(q);
+    const compactTerm = compactSearch(q);
+    const exactIssue = /^0*\d+$/.test(compactTerm)
+      ? Number(compactTerm)
+      : null;
 
     const rows = comics.filter((comic) => {
-      const searchText = [
+      const searchText = normalizeSearch([
         comic.title,
         comic.issue,
         comic.grade,
@@ -40,11 +55,14 @@ export default function InventoryBrowser({ comics }) {
         comic.publisher,
         comic.eyeAppeal,
         ...(comic.cardChips || []),
-      ]
-        .join(" ")
-        .toLowerCase();
+      ].join(" "));
+      const compactText = compactSearch(searchText);
 
-      const matchesSearch = !term || searchText.includes(term);
+      const matchesSearch =
+        !term ||
+        (exactIssue !== null
+          ? Number(comic.issue) === exactIssue
+          : searchText.includes(term) || compactText.includes(compactTerm));
       const matchesGrade = grade === "all" || comic.grade === grade;
       const matchesStatus = status === "all" || comic.status === status;
 
@@ -62,6 +80,13 @@ export default function InventoryBrowser({ comics }) {
     });
 
     return [...rows].sort((a, b) => {
+      // When the visitor enters only an issue number, place that exact issue first.
+      if (exactIssue !== null) {
+        const aExact = Number(a.issue) === exactIssue ? 1 : 0;
+        const bExact = Number(b.issue) === exactIssue ? 1 : 0;
+        if (aExact !== bExact) return bExact - aExact;
+      }
+
       if (sort === "issue-high") return (b.issue || 0) - (a.issue || 0);
       if (sort === "newest")
         return (b.arrivalOrder || 0) - (a.arrivalOrder || 0);
@@ -82,7 +107,7 @@ export default function InventoryBrowser({ comics }) {
           <input
             value={q}
             onChange={(event) => setQ(event.target.value)}
-            placeholder="Search issue, grade, artist, or key detail"
+            placeholder="Search 4, X-Men 4, grade, artist, or key detail"
           />
         </label>
 
