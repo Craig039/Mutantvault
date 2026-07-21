@@ -1,2 +1,87 @@
-import Link from "next/link";import inventory from "../data/inventory.json";import FeaturedComic from "../components/FeaturedComic";import NewArrivals from "../components/NewArrivals";import ComicCard from "../components/ComicCard";
-export default function Home(){const available=inventory.filter(c=>c.status==="available");const featured=available.find(c=>c.featured)||available[0];const newest=[...available].sort((a,b)=>(b.arrivalOrder||0)-(a.arrivalOrder||0)).slice(0,4);return <><section className="hero"><div className="shell hero-grid"><div className="hero-copy"><p className="eyebrow">Silver Age X-Men · Exact-copy photography</p><h1>Collector-grade comics from inside the vault.</h1><p className="hero-text">Certified X-Men comics selected for eye appeal and presented with detailed front-and-back photography. Listed prices include secure, tracked, insured U.S. shipping.</p><div className="button-row"><Link className="button primary" href="/inventory">Browse the Vault</Link><Link className="button secondary" href="/about">Our Standards</Link></div><div className="trust-row"><span>Exact book pictured</span><span>Insured shipping</span><span>Collector-owned inventory</span></div></div><FeaturedComic comic={featured}/></div></section><NewArrivals comics={newest}/><section className="section"><div className="shell"><div className="section-heading"><div><p className="eyebrow">Available now</p><h2>Inside the Vault</h2></div><Link className="text-link" href="/inventory">Browse all inventory</Link></div><div className="card-grid">{available.map(c=><ComicCard key={c.slug} comic={c}/>)}</div></div></section><section className="section dark-panel"><div className="shell split-callout"><div><p className="eyebrow">Inspect before you buy</p><h2>High-resolution photography is part of the listing.</h2><p>Every available comic includes photographs of the exact slab. Open the gallery full screen, move between front and back, and zoom in to review the CGC label, wrap, corners, cover surface, and case condition.</p></div><Link className="button primary" href="/inventory">View Inventory</Link></div></section></>}
+import Link from "next/link";
+import inventory from "../data/inventory.json";
+import FeaturedComic from "../components/FeaturedComic";
+import NewArrivals from "../components/NewArrivals";
+import ComicCard from "../components/ComicCard";
+
+export default function Home() {
+  const available = inventory.filter((comic) => comic.status === "available");
+  const featured = available.find((comic) => comic.featured) || available[0];
+  const newest = [...available]
+    .sort((a, b) => (b.arrivalOrder || 0) - (a.arrivalOrder || 0))
+    .slice(0, 4);
+
+  return (
+    <>
+      <section className="hero">
+        <div className="shell hero-grid">
+          <div className="hero-copy">
+            <img
+              className="hero-brand-logo"
+              src="/brand/mutant-vault-primary.png"
+              alt="Mutant Vault — curated high-grade X-Men and Marvel comics"
+            />
+            <h1>For collectors, curated by a collector.</h1>
+            <p className="hero-text">
+              Certified X-Men comics hand-selected for eye appeal and presented
+              with detailed photographs of the exact book offered. Listed prices
+              include secure, tracked, insured U.S. shipping.
+            </p>
+            <div className="button-row">
+              <Link className="button primary" href="/inventory">
+                Browse the Vault
+              </Link>
+              <Link className="button secondary" href="/about">
+                Our Standards
+              </Link>
+            </div>
+            <div className="trust-row">
+              <span>Exact book pictured</span>
+              <span>Insured shipping</span>
+              <span>Collector-owned inventory</span>
+            </div>
+          </div>
+          <FeaturedComic comic={featured} />
+        </div>
+      </section>
+
+      <NewArrivals comics={newest} />
+
+      <section className="section">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Available now</p>
+              <h2>Inside the Vault</h2>
+            </div>
+            <Link className="text-link" href="/inventory">
+              Browse all inventory
+            </Link>
+          </div>
+          <div className="card-grid">
+            {available.map((comic) => (
+              <ComicCard key={comic.slug} comic={comic} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section dark-panel">
+        <div className="shell split-callout">
+          <div>
+            <p className="eyebrow">Inspect before you buy</p>
+            <h2>High-resolution photography is part of the listing.</h2>
+            <p>
+              Every available comic includes photographs of the exact slab. Open
+              the gallery full screen, move between front and back, and zoom in to
+              review the CGC label, wrap, corners, cover surface, and case condition.
+            </p>
+          </div>
+          <Link className="button primary" href="/inventory">
+            View Inventory
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
