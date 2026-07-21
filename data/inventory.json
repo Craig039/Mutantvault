@@ -31,6 +31,12 @@
         "thumb": "/inventory/x-men-4-cgc-55-4118256002/back-thumb.jpg",
         "alt": "X-Men #4 CGC 5.5 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Strong for the Grade",
+    "cardChips": [
+      "1st Scarlet Witch",
+      "1st Quicksilver",
+      "2nd Magneto"
     ]
   },
   {
@@ -65,6 +71,11 @@
         "thumb": "/inventory/x-men-9-cgc-75-4675887015/back-thumb.jpg",
         "alt": "X-Men #9 CGC 7.5 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Strong",
+    "cardChips": [
+      "X-Men Meet Avengers",
+      "1st Lucifer"
     ]
   },
   {
@@ -99,6 +110,11 @@
         "thumb": "/inventory/x-men-8-cgc-70-4067175004/back-thumb.jpg",
         "alt": "X-Men #8 CGC 7.0 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Strong",
+    "cardChips": [
+      "1st Unus",
+      "Beast Pin-Up"
     ]
   },
   {
@@ -133,6 +149,11 @@
         "thumb": "/inventory/x-men-11-cgc-75-0137596008/back-thumb.jpg",
         "alt": "X-Men #11 CGC 7.5 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Exceptional",
+    "cardChips": [
+      "White Pages",
+      "1st Stranger"
     ]
   },
   {
@@ -151,7 +172,7 @@
     "badge": "New Arrival",
     "featured": false,
     "arrivalOrder": 6,
-    "keyDetails": "Third appearance of the Sentinels. Third use of the bold \u201cMarvel Comics Group\u201d cover logo.",
+    "keyDetails": "Third appearance of the Sentinels. Third use of the bold “Marvel Comics Group” cover logo.",
     "credits": "Stan Lee story. Werner Roth and Dick Ayers art. Jack Kirby cover and layouts.",
     "presentation": "A high-grade Silver Age example with vivid yellow cover color, sharp registration, and a commanding Sentinel cover.",
     "images": [
@@ -167,6 +188,11 @@
         "thumb": "/inventory/x-men-16-cgc-85-4645607004/back-thumb.jpg",
         "alt": "X-Men #16 CGC 8.5 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Exceptional",
+    "cardChips": [
+      "3rd Sentinels",
+      "Kirby Cover"
     ]
   },
   {
@@ -201,6 +227,11 @@
         "thumb": "/inventory/x-men-20-cgc-92-0012624003/back-thumb.jpg",
         "alt": "X-Men #20 CGC 9.2 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Exceptional",
+    "cardChips": [
+      "CGC 9.2",
+      "Lucifer Story"
     ]
   },
   {
@@ -235,6 +266,11 @@
         "thumb": "/inventory/x-men-22-cgc-85-4564013001/back-thumb.jpg",
         "alt": "X-Men #22 CGC 8.5 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Exceptional",
+    "cardChips": [
+      "CGC 8.5",
+      "Count Nefaria"
     ]
   },
   {
@@ -269,6 +305,11 @@
         "thumb": "/inventory/x-men-39-cgc-92-4681900015/back-thumb.jpg",
         "alt": "X-Men #39 CGC 9.2 back cover and CGC label"
       }
+    ],
+    "eyeAppeal": "Exceptional",
+    "cardChips": [
+      "White Pages",
+      "New Costumes"
     ]
   }
 ]
