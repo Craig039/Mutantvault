@@ -60,3 +60,31 @@
   .featured-image{max-width:390px;max-height:520px}
   .featured-title{font-size:clamp(2.35rem,12vw,3.5rem);white-space:normal}
 }
+
+/* Version 5.2 inventory card hierarchy */
+.card-price{
+  margin:14px 0 0;
+  color:var(--gold);
+  font-size:1.05rem;
+  font-weight:900;
+}
+.card-key-section{
+  margin-top:18px;
+}
+.card-section-label{
+  margin:0 0 8px;
+  color:var(--gold)!important;
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.card-key-section .key-chips{
+  margin:0 0 10px;
+}
+.card-key-section .card-key-details{
+  margin:0;
+}
+.card-footer{
+  justify-content:flex-end;
+}
