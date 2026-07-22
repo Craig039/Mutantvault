@@ -82,3 +82,31 @@
 .card-key-section .key-chips{
   margin:0 0 10px;
 }
+
+/* Version 5.6 — Mutant Vault Eye Appeal Standard */
+#eye-appeal-standard{scroll-margin-top:110px}
+.eye-standard{margin-top:42px;padding:34px;background:linear-gradient(180deg,rgba(16,25,39,.96),rgba(8,14,22,.98));border:1px solid var(--line);box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.eye-standard h2{margin:6px 0 18px;font-family:Georgia,serif;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.02}
+.eye-standard-intro{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.75}
+.eye-standard-callout{display:grid;gap:5px;margin:25px 0 30px;padding:18px 20px;background:rgba(212,162,76,.07);border-left:3px solid var(--gold)}
+.eye-standard-callout strong{color:var(--gold)}
+.eye-standard-callout span{color:var(--muted)}
+.eye-standard-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.eye-standard-panel{padding:22px;background:rgba(5,9,15,.55);border:1px solid rgba(212,162,76,.25)}
+.eye-standard h3{margin:0 0 12px;color:var(--gold);font-family:Georgia,serif;font-size:1.35rem}
+.eye-standard-panel p{margin:0 0 12px;color:var(--muted)}
+.eye-standard-panel p:last-child{margin-bottom:0}
+.eye-standard-panel ul{margin:0;padding-left:20px;color:var(--muted)}
+.eye-standard-panel li{margin:5px 0}
+.ratings-heading{margin-top:32px!important}
+.rating-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.rating-card{padding:18px;background:#09121d;border:1px solid rgba(212,162,76,.3)}
+.rating-card h4{margin:0 0 6px;color:var(--gold);font-family:Georgia,serif;font-size:1.15rem}
+.rating-card p{margin:0;color:var(--muted);font-size:.93rem}
+.eye-philosophy{margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+.eye-philosophy p{margin:0;color:var(--muted)}
+.detail-section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:7px}
+.detail-section-heading h2{margin:0}
+.eye-standard-link{color:var(--gold);font-size:.72rem;font-weight:900;letter-spacing:.05em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
+.eye-standard-link:hover{text-decoration:underline}
+@media(max-width:700px){.eye-standard{padding:24px 18px}.eye-standard-grid,.rating-grid{grid-template-columns:1fr}.detail-section-heading{align-items:flex-start;flex-direction:column;gap:5px}.eye-standard-link{white-space:normal}}

@@ -31,3 +31,11 @@ Presentation switches are stored in `config/site.js`. The New Arrival badge is c
 - Preserved the key-detail chips
 - Entire inventory cards remain clickable and keyboard accessible
 - Creates a shorter, cleaner premium-gallery presentation
+
+## Version 5.6 Eye Appeal documentation
+
+- Added a full Mutant Vault Eye Appeal Standard section to the About page
+- Explains the relationship between CGC grading and the site's presentation assessment
+- Documents evaluation factors and the Exceptional, Strong, Average, and Below Average ratings
+- Adds a direct Learn about Eye Appeal link from every comic detail page
+- Includes an anchored About-page section at `/about#eye-appeal-standard`
