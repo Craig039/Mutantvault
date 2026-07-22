@@ -311,5 +311,43 @@
       "White Pages",
       "New Costumes"
     ]
+  },
+  {
+    "slug": "x-men-21-cgc-90-4715641018",
+    "title": "X-Men #21",
+    "issue": 21,
+    "publisher": "Marvel Comics",
+    "year": "1966",
+    "issueDate": "June 1966",
+    "grade": "CGC 9.0",
+    "pages": "White",
+    "certNumber": "4715641018",
+    "price": "$250 shipped",
+    "numericPrice": 250,
+    "status": "available",
+    "badge": "New Arrival",
+    "featured": false,
+    "arrivalOrder": 10,
+    "keyDetails": "Lucifer appearance.",
+    "credits": "Roy Thomas story. Werner Roth and Dick Ayers art. Werner Roth cover.",
+    "presentation": "A sharp high-grade copy with White Pages, clean cover registration, strong color, and an attractive overall presentation.",
+    "images": [
+      {
+        "display": "/inventory/x-men-21-cgc-90-4715641018/front-display.jpg",
+        "full": "/inventory/x-men-21-cgc-90-4715641018/front-full.jpg",
+        "thumb": "/inventory/x-men-21-cgc-90-4715641018/front-thumb.jpg",
+        "alt": "X-Men #21 CGC 9.0 White Pages front cover and CGC label"
+      },
+      {
+        "display": "/inventory/x-men-21-cgc-90-4715641018/back-display.jpg",
+        "full": "/inventory/x-men-21-cgc-90-4715641018/back-full.jpg",
+        "thumb": "/inventory/x-men-21-cgc-90-4715641018/back-thumb.jpg",
+        "alt": "X-Men #21 CGC 9.0 White Pages back cover and CGC label"
+      }
+    ],
+    "eyeAppeal": "Strong",
+    "cardChips": [
+      "Lucifer Appearance"
+    ]
   }
 ]

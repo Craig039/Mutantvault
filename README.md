@@ -32,10 +32,15 @@ Presentation switches are stored in `config/site.js`. The New Arrival badge is c
 - Entire inventory cards remain clickable and keyboard accessible
 - Creates a shorter, cleaner premium-gallery presentation
 
-## Version 5.6 Eye Appeal documentation
+## Version 5.7 Eye Appeal documentation
 
 - Added a full Mutant Vault Eye Appeal Standard section to the About page
 - Explains the relationship between CGC grading and the site's presentation assessment
 - Documents evaluation factors and the Exceptional, Strong, Average, and Below Average ratings
 - Adds a direct Learn about Eye Appeal link from every comic detail page
 - Includes an anchored About-page section at `/about#eye-appeal-standard`
+
+
+## Version 5.7
+
+Added X-Men #21 CGC 9.0 White Pages (CGC 4715641018) at $250 shipped with front/back photography and optimized gallery assets.
