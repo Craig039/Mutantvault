@@ -4,6 +4,7 @@ import {imageSource,imageAlt} from "../lib/images";
 
 const LENS_SIZE = 210;
 const MAGNIFICATION = 2.75;
+const DRAG_THRESHOLD = 8;
 
 export default function ComicGallery({title,images=[]}){
   const clean=useMemo(()=>images.filter(Boolean),[images]);
@@ -12,6 +13,8 @@ export default function ComicGallery({title,images=[]}){
   const [open,setOpen]=useState(false);
   const [scale,setScale]=useState(1);
   const touchStart=useRef(null);
+  const pointerState=useRef({active:false,id:null,startX:0,startY:0,moved:false,type:null});
+  const suppressClick=useRef(false);
   const mainRef=useRef(null);
   const imageRef=useRef(null);
 
@@ -36,13 +39,13 @@ export default function ComicGallery({title,images=[]}){
 
   if(!display)return <div className="detail-image-placeholder"><strong>{title}</strong><span>Photos coming soon</span></div>;
 
-  function move(e){
+  function updateMagnifier(clientX,clientY){
     const container=mainRef.current?.getBoundingClientRect();
     const rendered=imageRef.current?.getBoundingClientRect();
     if(!container||!rendered)return;
 
-    const localX=e.clientX-rendered.left;
-    const localY=e.clientY-rendered.top;
+    const localX=clientX-rendered.left;
+    const localY=clientY-rendered.top;
 
     if(localX<0||localY<0||localX>rendered.width||localY>rendered.height){
       setZoom(null);
@@ -66,6 +69,64 @@ export default function ComicGallery({title,images=[]}){
     });
   }
 
+  function handlePointerEnter(e){
+    if(e.pointerType==="mouse")updateMagnifier(e.clientX,e.clientY);
+  }
+
+  function handlePointerDown(e){
+    if(e.pointerType==="mouse")return;
+    pointerState.current={
+      active:true,
+      id:e.pointerId,
+      startX:e.clientX,
+      startY:e.clientY,
+      moved:false,
+      type:e.pointerType
+    };
+    suppressClick.current=false;
+    e.currentTarget.setPointerCapture?.(e.pointerId);
+    updateMagnifier(e.clientX,e.clientY);
+    e.preventDefault();
+  }
+
+  function handlePointerMove(e){
+    if(e.pointerType==="mouse"){
+      updateMagnifier(e.clientX,e.clientY);
+      return;
+    }
+
+    const state=pointerState.current;
+    if(!state.active||state.id!==e.pointerId)return;
+
+    const distance=Math.hypot(e.clientX-state.startX,e.clientY-state.startY);
+    if(distance>DRAG_THRESHOLD){
+      state.moved=true;
+      suppressClick.current=true;
+    }
+
+    updateMagnifier(e.clientX,e.clientY);
+    e.preventDefault();
+  }
+
+  function finishPointer(e){
+    const state=pointerState.current;
+    if(!state.active||state.id!==e.pointerId)return;
+
+    if(state.moved)suppressClick.current=true;
+    pointerState.current={active:false,id:null,startX:0,startY:0,moved:false,type:null};
+    e.currentTarget.releasePointerCapture?.(e.pointerId);
+    setZoom(null);
+  }
+
+  function handleMainClick(e){
+    if(suppressClick.current){
+      suppressClick.current=false;
+      e.preventDefault();
+      return;
+    }
+    setOpen(true);
+  }
+
   function startTouch(e){touchStart.current=e.touches?.[0]?.clientX??null}
   function endTouch(e){
     if(touchStart.current===null||clean.length<2)return;
@@ -76,8 +137,19 @@ export default function ComicGallery({title,images=[]}){
   }
 
   return <div className="comic-gallery">
-    <button ref={mainRef} className="gallery-main" onMouseMove={move} onMouseLeave={()=>setZoom(null)} onClick={()=>setOpen(true)} onTouchStart={startTouch} onTouchEnd={endTouch}>
-      <img ref={imageRef} src={display} alt={imageAlt(image,`${title} image ${active+1}`)}/>
+    <button
+      ref={mainRef}
+      className="gallery-main"
+      onPointerEnter={handlePointerEnter}
+      onPointerMove={handlePointerMove}
+      onPointerDown={handlePointerDown}
+      onPointerUp={finishPointer}
+      onPointerCancel={finishPointer}
+      onPointerLeave={e=>{if(e.pointerType==="mouse")setZoom(null)}}
+      onClick={handleMainClick}
+      aria-label={`Inspect ${title}. Hover with a mouse or press and drag on a touch screen to magnify. Tap to open full screen.`}
+    >
+      <img ref={imageRef} src={display} alt={imageAlt(image,`${title} image ${active+1}`)} draggable="false"/>
       {zoom&&<span className="magnifier-lens" style={{
         left:`${zoom.left}px`,
         top:`${zoom.top}px`,
