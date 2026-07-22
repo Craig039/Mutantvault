@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { imageSource, imageAlt } from "../lib/images";
+import { SITE_CONFIG } from "../config/site";
 
 function normalize(value = "") {
   return value
@@ -14,6 +15,9 @@ export default function ComicCard({ comic }) {
   const image = comic.images?.[0];
   const src = imageSource(image, "thumb");
   const href = `/inventory/${comic.slug}`;
+  const isNewArrival = comic.badge === "New Arrival";
+  const showStatusBadge = Boolean(comic.badge) &&
+    (!isNewArrival || SITE_CONFIG.showNewArrivalBadge);
 
   const gradeValue = normalize(comic.grade);
   const pageValue = normalize(comic.pages);
@@ -45,7 +49,9 @@ export default function ComicCard({ comic }) {
               <small>Photos coming soon</small>
             </div>
           )}
-          <span className={`status-badge ${comic.status}`}>{comic.badge}</span>
+          {showStatusBadge && (
+            <span className={`status-badge ${comic.status}`}>{comic.badge}</span>
+          )}
         </div>
 
         <div className="comic-card-body">

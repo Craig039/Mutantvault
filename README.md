@@ -17,3 +17,8 @@ Production Next.js site for Mutant Vault.
 1. Replace the contents of your local GitHub repository with this package.
 2. Commit and push to `main`.
 3. Vercel will deploy automatically.
+
+
+## Site feature toggles
+
+Presentation switches are stored in `config/site.js`. The New Arrival badge is currently disabled site-wide. To restore it, change `showNewArrivalBadge` from `false` to `true`, then commit and push. Inventory records do not need to be edited.
