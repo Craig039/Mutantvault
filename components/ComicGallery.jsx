@@ -78,7 +78,6 @@ export default function ComicGallery({title,images=[]}){
   return <div className="comic-gallery">
     <button ref={mainRef} className="gallery-main" onMouseMove={move} onMouseLeave={()=>setZoom(null)} onClick={()=>setOpen(true)} onTouchStart={startTouch} onTouchEnd={endTouch}>
       <img ref={imageRef} src={display} alt={imageAlt(image,`${title} image ${active+1}`)}/>
-      <span className="zoom-hint">Hover to magnify · Click for full screen</span>
       {zoom&&<span className="magnifier-lens" style={{
         left:`${zoom.left}px`,
         top:`${zoom.top}px`,

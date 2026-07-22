@@ -1,4 +1,4 @@
-# Mutant Vault Version 5.4
+# Mutant Vault Version 5
 
 Production Next.js site for Mutant Vault.
 
@@ -23,8 +23,8 @@ Production Next.js site for Mutant Vault.
 
 Presentation switches are stored in `config/site.js`. The New Arrival badge is currently disabled site-wide. To restore it, change `showNewArrivalBadge` from `false` to `true`, then commit and push. Inventory records do not need to be edited.
 
-## Version 5.4 image update
 
-- Replaced the X-Men #4 CGC 5.5 front-cover photograph across the homepage, inventory card, listing gallery, magnifier, and lightbox.
-- Regenerated full-size, display-size, and thumbnail image assets from the new source photograph.
-- Preserved the existing X-Men #4 back-cover photograph.
+## Version 5.4
+- Replaced X-Men #4 front photography with cache-busted image assets.
+- Removed the visible hover/full-screen instructional overlay.
+- Magnification and click-to-open behavior remain enabled.
