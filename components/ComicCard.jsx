@@ -85,12 +85,8 @@ export default function ComicCard({ comic }) {
               </div>
             )}
 
-            <p className="card-key-details">{comic.keyDetails}</p>
           </div>
 
-          <div className="card-footer">
-            <span className="text-link">View Book</span>
-          </div>
         </div>
       </article>
     </Link>
