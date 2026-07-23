@@ -1,3 +1,9 @@
+# Mutant Vault Version 6.1
+
+This release replaces the X-Men #4, #9, and #22 front/back photography using new versioned image filenames (`v61`) to prevent stale browser or Vercel CDN caching.
+
+All inventory references now point exclusively to the new files.
+
 # Mutant Vault Version 6.0
 
 Production Next.js site for Mutant Vault. Version 6.0 establishes the current master release and consolidates the completed Version 5 improvements.
