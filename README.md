@@ -44,3 +44,8 @@ Presentation switches are stored in `config/site.js`. The New Arrival badge is c
 ## Version 5.7
 
 Added X-Men #21 CGC 9.0 White Pages (CGC 4715641018) at $250 shipped with front/back photography and optimized gallery assets.
+
+## Version 5.9
+- Adds a tablet-only responsive adjustment for the homepage featured-comic panel.
+- Prevents the X-Men #4 description and notes from clipping on iPad landscape.
+- Leaves desktop widths above 1250px and phone widths at 760px or below unchanged.

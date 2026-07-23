@@ -110,3 +110,40 @@
 .eye-standard-link{color:var(--gold);font-size:.72rem;font-weight:900;letter-spacing:.05em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
 .eye-standard-link:hover{text-decoration:underline}
 @media(max-width:700px){.eye-standard{padding:24px 18px}.eye-standard-grid,.rating-grid{grid-template-columns:1fr}.detail-section-heading{align-items:flex-start;flex-direction:column;gap:5px}.eye-standard-link{white-space:normal}}
+
+/* Version 5.9 — tablet-only featured comic fit
+   Keeps desktop (>1250px) and phone (<=760px) layouts unchanged. */
+@media (min-width:761px) and (max-width:1250px){
+  .featured-comic{overflow:visible}
+  .featured-grid{
+    grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);
+    gap:22px;
+  }
+  .featured-image-wrap,.featured-placeholder{
+    min-width:0;
+    min-height:520px;
+  }
+  .featured-image{
+    max-width:455px;
+    max-height:590px;
+  }
+  .featured-details{
+    min-width:0;
+    overflow:visible;
+    padding-right:0;
+  }
+  .featured-title{
+    font-size:clamp(2.15rem,3.2vw,3.1rem);
+    white-space:normal;
+    overflow-wrap:normal;
+  }
+  .featured-facts dd{
+    max-width:100%;
+    font-size:.96rem;
+    line-height:1.4;
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+  .featured-facts div{margin-bottom:13px}
+  .featured-price{margin-top:18px}
+}
