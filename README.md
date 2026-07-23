@@ -1,51 +1,29 @@
-# Mutant Vault Version 5.5
+# Mutant Vault Version 6.0
 
-Production Next.js site for Mutant Vault.
+Production Next.js site for Mutant Vault. Version 6.0 establishes the current master release and consolidates the completed Version 5 improvements.
 
-## Version 5 homepage changes
+## Version 6.0 changes
 
-- Refined two-column hero composition
-- Keeps “For collectors, curated by a collector.” as the primary brand message
-- Enlarged featured comic photography
-- Wider featured-comic panel with a balanced image/text split
-- Responsive `X-Men #4` title that stays inside the panel
-- Improved spacing, typography, and mobile breakpoints
-- Preserves all Version 4 inventory, search, card, gallery, magnifier, SEO, and sorting features
+- Replaced the front and back photographs for X-Men #4 CGC 5.5.
+- Replaced the front and back photographs for X-Men #9 CGC 7.5.
+- Replaced the front and back photographs for X-Men #22 CGC 8.5.
+- Regenerated thumbnail, display, and full-resolution gallery assets from the supplied photographs.
+- Preserved the photographs exactly apart from EXIF orientation correction and proportional resizing.
+- Retains the iPad touch magnifier and tablet-only featured-comic layout fix.
+- Retains the Eye Appeal Standard, clean inventory cards, X-Men #21 listing, numeric sorting, search, SEO, sitemap, and New Arrival toggle.
 
 ## Publish
 
-1. Replace the contents of your local GitHub repository with this package.
+1. Replace the contents of the GitHub repository with this package.
 2. Commit and push to `main`.
 3. Vercel will deploy automatically.
 
+Suggested commit message:
+
+```text
+Version 6.0 - Refresh X-Men 4, 9, and 22 photography
+```
 
 ## Site feature toggles
 
-Presentation switches are stored in `config/site.js`. The New Arrival badge is currently disabled site-wide. To restore it, change `showNewArrivalBadge` from `false` to `true`, then commit and push. Inventory records do not need to be edited.
-
-
-## Version 5.5 inventory-card changes
-
-- Removed the descriptive paragraph beneath Key Details
-- Removed the redundant View Book link
-- Preserved the key-detail chips
-- Entire inventory cards remain clickable and keyboard accessible
-- Creates a shorter, cleaner premium-gallery presentation
-
-## Version 5.7 Eye Appeal documentation
-
-- Added a full Mutant Vault Eye Appeal Standard section to the About page
-- Explains the relationship between CGC grading and the site's presentation assessment
-- Documents evaluation factors and the Exceptional, Strong, Average, and Below Average ratings
-- Adds a direct Learn about Eye Appeal link from every comic detail page
-- Includes an anchored About-page section at `/about#eye-appeal-standard`
-
-
-## Version 5.7
-
-Added X-Men #21 CGC 9.0 White Pages (CGC 4715641018) at $250 shipped with front/back photography and optimized gallery assets.
-
-## Version 5.9
-- Adds a tablet-only responsive adjustment for the homepage featured-comic panel.
-- Prevents the X-Men #4 description and notes from clipping on iPad landscape.
-- Leaves desktop widths above 1250px and phone widths at 760px or below unchanged.
+Presentation switches are stored in `config/site.js`. The New Arrival badge remains disabled site-wide and can be restored by setting `showNewArrivalBadge` to `true`.
