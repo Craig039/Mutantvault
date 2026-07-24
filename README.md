@@ -1,3 +1,10 @@
+# Mutant Vault Version 6.6
+
+- Makes every CGC certification number on a comic detail page a direct link to the matching official CGC certification lookup page.
+- Recalibrates Eye Appeal across all 31 listings using four distinct tiers: Exceptional, Strong, Average, and Below Average.
+- Displays the Eye Appeal rating on both inventory cards and comic detail pages.
+- Preserves Version 6.5 homepage randomization and all existing inventory, pricing, and image assets.
+
 # Mutant Vault Version 6.4
 
 Fixes the homepage so “Inside the Vault” displays a six-book preview instead of the entire available inventory. New Arrivals remains limited to four books, and the full catalog remains available on the Inventory page.

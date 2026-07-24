@@ -147,3 +147,6 @@
   .featured-facts div{margin-bottom:13px}
   .featured-price{margin-top:18px}
 }
+
+/* Version 6.6: CGC verification and calibrated Eye Appeal */
+.cert-link{margin-left:4px;color:var(--gold);font-weight:900;text-decoration:none;text-underline-offset:3px}.cert-link:hover,.cert-link:focus-visible{text-decoration:underline}.detail-eye-appeal{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px;padding:12px 14px;background:rgba(212,162,76,.06);border:1px solid var(--line)}.detail-eye-appeal span{color:var(--muted);font-size:.72rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.detail-eye-appeal strong{color:var(--gold)}
