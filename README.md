@@ -1,3 +1,10 @@
+# Mutant Vault Version 6.7
+
+- Updates all 31 Eye Appeal ratings using the final collector-calibrated assessment.
+- Final distribution: 8 Exceptional, 12 Strong, 11 Average, and no Below Average listings.
+- X-Men #12 CGC 7.0 is rated Strong based on its vivid red color and above-average presentation for the grade.
+- Preserves all Version 6.6 CGC certification links, homepage behavior, pricing, inventory status, and image assets.
+
 # Mutant Vault Version 6.6
 
 - Makes every CGC certification number on a comic detail page a direct link to the matching official CGC certification lookup page.
