@@ -1,35 +1,19 @@
-# Mutant Vault Version 6.1
+# Mutant Vault Version 6.3
 
-This release replaces the X-Men #4, #9, and #22 front/back photography using new versioned image filenames (`v61`) to prevent stale browser or Vercel CDN caching.
+Production inventory release containing 31 graded X-Men listings.
 
-All inventory references now point exclusively to the new files.
+## Included in this release
 
-# Mutant Vault Version 6.0
+- Adds 22 new listings with the supplied prices.
+- Lists X-Men #43 CGC 9.6 as sold.
+- Repairs X-Men #9 CGC 7.5 with the latest uploaded front-cover scan and cache-busted `v63` image filenames.
+- Includes front and back photography, optimized thumbnail/display/full variants, numeric issue sorting, search, sold archive, Eye Appeal content, iPad touch magnification, and tablet layout corrections.
+- Uses shipped pricing throughout active listings.
 
-Production Next.js site for Mutant Vault. Version 6.0 establishes the current master release and consolidates the completed Version 5 improvements.
+Deploy the extracted project to Vercel or run locally with:
 
-## Version 6.0 changes
-
-- Replaced the front and back photographs for X-Men #4 CGC 5.5.
-- Replaced the front and back photographs for X-Men #9 CGC 7.5.
-- Replaced the front and back photographs for X-Men #22 CGC 8.5.
-- Regenerated thumbnail, display, and full-resolution gallery assets from the supplied photographs.
-- Preserved the photographs exactly apart from EXIF orientation correction and proportional resizing.
-- Retains the iPad touch magnifier and tablet-only featured-comic layout fix.
-- Retains the Eye Appeal Standard, clean inventory cards, X-Men #21 listing, numeric sorting, search, SEO, sitemap, and New Arrival toggle.
-
-## Publish
-
-1. Replace the contents of the GitHub repository with this package.
-2. Commit and push to `main`.
-3. Vercel will deploy automatically.
-
-Suggested commit message:
-
-```text
-Version 6.0 - Refresh X-Men 4, 9, and 22 photography
+```bash
+npm install
+npm run build
+npm start
 ```
-
-## Site feature toggles
-
-Presentation switches are stored in `config/site.js`. The New Arrival badge remains disabled site-wide and can be restored by setting `showNewArrivalBadge` to `true`.
