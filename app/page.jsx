@@ -4,12 +4,39 @@ import FeaturedComic from "../components/FeaturedComic";
 import NewArrivals from "../components/NewArrivals";
 import ComicCard from "../components/ComicCard";
 
+export const dynamic = "force-dynamic";
+
+function shuffleComics(comics) {
+  const shuffled = [...comics];
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[index],
+    ];
+  }
+
+  return shuffled;
+}
+
 export default function Home() {
   const available = inventory.filter((comic) => comic.status === "available");
   const featured = available.find((comic) => comic.featured) || available[0];
+
   const newest = [...available]
+    .filter((comic) => comic.slug !== featured?.slug)
     .sort((a, b) => (b.arrivalOrder || 0) - (a.arrivalOrder || 0))
     .slice(0, 4);
+
+  const excludedSlugs = new Set([
+    featured?.slug,
+    ...newest.map((comic) => comic.slug),
+  ]);
+
+  const vaultTreasures = shuffleComics(
+    available.filter((comic) => !excludedSlugs.has(comic.slug)),
+  ).slice(0, 6);
 
   return (
     <>
@@ -47,14 +74,14 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Available now</p>
-              <h2>Inside the Vault</h2>
+              <h2>Treasures from the Vault</h2>
             </div>
             <Link className="text-link" href="/inventory">
               Browse all inventory
             </Link>
           </div>
           <div className="card-grid">
-            {available.map((comic) => (
+            {vaultTreasures.map((comic) => (
               <ComicCard key={comic.slug} comic={comic} />
             ))}
           </div>

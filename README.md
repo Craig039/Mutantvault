@@ -1,3 +1,7 @@
+# Mutant Vault Version 6.4
+
+Fixes the homepage so “Inside the Vault” displays a six-book preview instead of the entire available inventory. New Arrivals remains limited to four books, and the full catalog remains available on the Inventory page.
+
 # Mutant Vault Version 6.3
 
 Production inventory release containing 31 graded X-Men listings.
