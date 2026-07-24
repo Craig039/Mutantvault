@@ -1,0 +1,1 @@
+import inventory from "../data/inventory.json";export default function sitemap(){const base="https://www.mutantvault.com";const staticRoutes=["","/inventory","/sold","/about","/shipping","/faq","/contact"].map(path=>({url:`${base}${path}`,lastModified:new Date()}));return [...staticRoutes,...inventory.map(c=>({url:`${base}/inventory/${c.slug}`,lastModified:new Date()}))]}
