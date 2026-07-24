@@ -1,5 +1,6 @@
 "use client";
 import {useEffect,useMemo,useRef,useState} from "react";
+import {createPortal} from "react-dom";
 import {imageSource,imageAlt} from "../lib/images";
 
 const LENS_SIZE = 210;
@@ -12,6 +13,7 @@ export default function ComicGallery({title,images=[]}){
   const [zoom,setZoom]=useState(null);
   const [open,setOpen]=useState(false);
   const [scale,setScale]=useState(1);
+  const [mounted,setMounted]=useState(false);
   const touchStart=useRef(null);
   const pointerState=useRef({active:false,id:null,startX:0,startY:0,moved:false,type:null});
   const suppressClick=useRef(false);
@@ -23,6 +25,15 @@ export default function ComicGallery({title,images=[]}){
   const full=imageSource(image,"full");
   const previous=()=>{setActive(v=>(v-1+clean.length)%clean.length);setScale(1);setZoom(null)};
   const next=()=>{setActive(v=>(v+1)%clean.length);setScale(1);setZoom(null)};
+
+  useEffect(()=>{setMounted(true)},[]);
+
+  useEffect(()=>{
+    if(!open)return;
+    const previousOverflow=document.body.style.overflow;
+    document.body.style.overflow="hidden";
+    return()=>{document.body.style.overflow=previousOverflow};
+  },[open]);
 
   useEffect(()=>{
     const fn=e=>{
@@ -159,13 +170,15 @@ export default function ComicGallery({title,images=[]}){
       }}/>} 
     </button>
     {clean.length>1&&<div className="gallery-thumbnails">{clean.map((img,i)=><button key={`${imageSource(img,"thumb")}-${i}`} className={i===active?"active":""} onClick={()=>{setActive(i);setScale(1);setZoom(null)}} aria-label={`View ${title} image ${i+1}`}><img src={imageSource(img,"thumb")} alt=""/></button>)}</div>}
-    {open&&<div className="lightbox" onTouchStart={startTouch} onTouchEnd={endTouch}>
-      <div className="lightbox-tools"><button onClick={()=>setScale(v=>Math.max(1,v-.25))} aria-label="Zoom out">−</button><span>{Math.round(scale*100)}%</span><button onClick={()=>setScale(v=>Math.min(3,v+.25))} aria-label="Zoom in">+</button><button onClick={()=>setScale(1)}>Reset</button></div>
-      <button className="lightbox-close" onClick={()=>setOpen(false)} aria-label="Close full screen viewer">×</button>
-      {clean.length>1&&<button className="lightbox-arrow lightbox-prev" onClick={previous} aria-label="Previous image">‹</button>}
-      <div className="lightbox-canvas"><img src={full} alt={imageAlt(image,`${title} full-resolution image`)} style={{transform:`scale(${scale})`}}/></div>
-      {clean.length>1&&<button className="lightbox-arrow lightbox-next" onClick={next} aria-label="Next image">›</button>}
-      <div className="lightbox-caption">Image {active+1} of {clean.length} · Use +/− to inspect details</div>
-    </div>}
+    {mounted&&open&&createPortal(
+      <div className="lightbox" role="dialog" aria-modal="true" aria-label={`${title} full-screen image viewer`} onTouchStart={startTouch} onTouchEnd={endTouch}>
+        <div className="lightbox-tools"><button onClick={()=>setScale(v=>Math.max(1,v-.25))} aria-label="Zoom out">−</button><span>{Math.round(scale*100)}%</span><button onClick={()=>setScale(v=>Math.min(3,v+.25))} aria-label="Zoom in">+</button><button onClick={()=>setScale(1)}>Reset</button></div>
+        <button className="lightbox-close" onClick={()=>setOpen(false)} aria-label="Close full screen viewer">×</button>
+        {clean.length>1&&<button className="lightbox-arrow lightbox-prev" onClick={previous} aria-label="Previous image">‹</button>}
+        <div className={`lightbox-canvas ${scale>1?"is-zoomed":""}`}><img src={full} alt={imageAlt(image,`${title} full-resolution image`)} style={{transform:`scale(${scale})`}}/></div>
+        {clean.length>1&&<button className="lightbox-arrow lightbox-next" onClick={next} aria-label="Next image">›</button>}
+      </div>,
+      document.body
+    )}
   </div>
 }
