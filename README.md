@@ -1,4 +1,4 @@
-# Mutant Vault Version 6.7
+# Mutant Vault Version 6.8
 
 - Updates all 31 Eye Appeal ratings using the final collector-calibrated assessment.
 - Final distribution: 8 Exceptional, 12 Strong, 11 Average, and no Below Average listings.
@@ -35,3 +35,10 @@ npm install
 npm run build
 npm start
 ```
+
+
+## Version 6.8
+- Replaced Eye Appeal ratings with issue-specific Curator Notes.
+- Added limited Curator's Pick designations.
+- Added collector-standard explanation to the About page.
+- Preserved CGC certification links and all Version 6.7 inventory, pricing, imagery, and homepage behavior.

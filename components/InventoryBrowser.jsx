@@ -53,7 +53,8 @@ export default function InventoryBrowser({ comics }) {
         comic.keyDetails,
         comic.credits,
         comic.publisher,
-        comic.eyeAppeal,
+        ...(comic.curatorNotes || []),
+        comic.curatorsPick ? "curators pick" : "",
         ...(comic.cardChips || []),
       ].join(" "));
       const compactText = compactSearch(searchText);

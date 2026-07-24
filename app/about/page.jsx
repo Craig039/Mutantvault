@@ -1,10 +1,55 @@
-export const metadata={title:"About"};
+export const metadata = { title: "About" };
 
-const ratings=[
-  {name:"Exceptional",description:"Significantly stronger presentation than typically expected for the assigned grade. These copies stand out immediately and may resemble higher-grade examples at first glance."},
-  {name:"Strong",description:"Better-than-average presentation for the grade, with attractive overall balance and limited visual distractions."},
-  {name:"Average",description:"Typical presentation for the assigned grade, with the visual characteristics a collector would ordinarily expect."},
-  {name:"Below Average",description:"Noticeable visual distractions or uneven presentation relative to many other copies in the same grade."}
-];
+export default function Page() {
+  return (
+    <section className="section page-top">
+      <div className="shell narrow">
+        <p className="eyebrow">About Mutant Vault</p>
+        <h1>Built by a collector, for collectors.</h1>
+        <p className="lead">Mutant Vault specializes in high-grade X-Men and Marvel comics selected for presentation, authenticity, and collector appeal.</p>
 
-export default function Page(){return <section className="section page-top"><div className="shell narrow"><p className="eyebrow">About Mutant Vault</p><h1>Built by a collector, for collectors.</h1><p className="lead">Mutant Vault specializes in high-grade X-Men and Marvel comics selected for presentation, authenticity, and collector appeal.</p><div className="content-panel"><h2>Grade is only the beginning</h2><p>Wrap, centering, color, registration, page quality, and overall eye appeal can make two books in the same grade feel very different.</p><h2>Clear presentation</h2><p>Listings are photographed carefully, described honestly, and shipped securely.</p></div><section className="eye-standard" id="eye-appeal-standard" aria-labelledby="eye-standard-title"><p className="eyebrow">Our Collector Standard</p><h2 id="eye-standard-title">The Mutant Vault Eye Appeal Standard</h2><p className="eye-standard-intro">CGC provides an independent, industry-standard assessment of a comic's technical condition. Collectors also know that two books carrying the same numerical grade can present very differently. The Mutant Vault Eye Appeal rating is our assessment of how a specific copy presents within its assigned CGC grade.</p><div className="eye-standard-callout"><strong>Eye Appeal does not replace or modify the CGC grade.</strong><span>It provides additional context about the book's visual presentation so collectors can compare individual copies more thoughtfully.</span></div><div className="eye-standard-grid"><div className="eye-standard-panel"><h3>What We Evaluate</h3><ul><li>Cover centering and registration</li><li>Color vibrancy and gloss</li><li>Spine presentation</li><li>White-border appearance</li><li>Placement and distribution of defects</li><li>Overall visual balance and display appeal</li><li>Slab presentation</li></ul></div><div className="eye-standard-panel"><h3>How to Use the Rating</h3><p>No single characteristic determines the result. The rating reflects the complete presentation of the certified comic and is intended to supplement—not override—the grade on the CGC label.</p><p>Every listing includes high-resolution photography so collectors can inspect the exact book and reach their own conclusion.</p></div></div><h3 className="ratings-heading">Eye Appeal Ratings</h3><div className="rating-grid">{ratings.map(r=><article className="rating-card" key={r.name}><h4>{r.name}</h4><p>{r.description}</p></article>)}</div><div className="eye-philosophy"><h3>Our Philosophy</h3><p>The Mutant Vault Eye Appeal rating is a subjective collector opinion developed through years of evaluating Silver Age X-Men comics. It is designed to communicate what photographs and a numerical grade may not fully capture, while leaving the final evaluation with the buyer.</p></div></section></div></section>}
+        <div className="content-panel">
+          <h2>Grade is only the beginning</h2>
+          <p>Wrap, centering, staple placement, registration, color, page quality, and other manufacturing characteristics can make two books in the same grade feel very different.</p>
+          <h2>Clear presentation</h2>
+          <p>Listings are photographed carefully, described honestly, and shipped securely.</p>
+        </div>
+
+        <section className="curator-standard" id="curator-notes" aria-labelledby="curator-standard-title">
+          <p className="eyebrow">Our Collector Standard</p>
+          <h2 id="curator-standard-title">What are Curator Notes?</h2>
+          <p className="curator-standard-intro">Every comic offered by Mutant Vault is personally selected. Beyond the CGC grade, each book is evaluated for manufacturing quality and visual presentation—including wrap, centering, staple placement, registration, color, and other characteristics collectors value that may not materially affect the CGC grade.</p>
+
+          <div className="curator-standard-callout">
+            <strong>Curator Notes do not replace or modify the CGC grade.</strong>
+            <span>They explain why a particular copy stood out during the selection process and help collectors compare individual examples more thoughtfully.</span>
+          </div>
+
+          <div className="curator-standard-grid">
+            <div className="curator-standard-panel">
+              <h3>What We Evaluate</h3>
+              <ul>
+                <li>Front-to-back wrap and cover centering</li>
+                <li>Staple placement and spine alignment</li>
+                <li>Printing registration and trim</li>
+                <li>Writing, arrival dates, and distributor markings</li>
+                <li>Color saturation, gloss, and clean borders</li>
+                <li>Overall visual balance and display appeal</li>
+              </ul>
+            </div>
+            <div className="curator-standard-panel">
+              <h3>How to Use the Notes</h3>
+              <p>CGC assesses technical condition. Curator Notes focus on the manufacturing and presentation traits that help distinguish one certified copy from another.</p>
+              <p>Every listing includes high-resolution front-and-back photography so collectors can inspect the exact book and reach their own conclusion.</p>
+            </div>
+          </div>
+
+          <div className="curator-philosophy">
+            <h3>Our Philosophy</h3>
+            <p>Mutant Vault is built around selecting the copy—not merely buying the grade. Curator Notes document the characteristics that informed that selection and provide context that a numerical grade alone cannot fully communicate.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  );
+}

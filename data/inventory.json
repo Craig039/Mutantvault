@@ -32,12 +32,16 @@
         "alt": "X-Men #4 CGC 5.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "1st Scarlet Witch",
       "1st Quicksilver",
       "2nd Magneto"
-    ]
+    ],
+    "curatorNotes": [
+      "Strong color saturation and balanced centering for the grade.",
+      "The cover displays far better than many mid-grade examples."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-9-cgc-75-4675887015",
@@ -72,11 +76,15 @@
         "alt": "X-Men #9 CGC 7.5 back"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "X-Men Meet Avengers",
       "1st Lucifer"
-    ]
+    ],
+    "curatorNotes": [
+      "Strong wrap with clean, balanced presentation.",
+      "Vibrant color makes this an above-average example."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-8-cgc-70-4067175004",
@@ -111,11 +119,15 @@
         "alt": "X-Men #8 CGC 7.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "1st Unus",
       "Beast Pin-Up"
-    ]
+    ],
+    "curatorNotes": [
+      "Solid overall presentation with attractive cover color.",
+      "Minor manufacturing alignment keeps it from the strongest examples."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-11-cgc-75-0137596008",
@@ -150,11 +162,15 @@
         "alt": "X-Men #11 CGC 7.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "White Pages",
       "1st Stranger"
-    ]
+    ],
+    "curatorNotes": [
+      "Near-perfect wrap and outstanding centering.",
+      "White pages further distinguish this carefully selected copy."
+    ],
+    "curatorsPick": true
   },
   {
     "slug": "x-men-16-cgc-85-4645607004",
@@ -172,7 +188,7 @@
     "badge": "New Arrival",
     "featured": false,
     "arrivalOrder": 6,
-    "keyDetails": "Third appearance of the Sentinels. Third use of the bold \u201cMarvel Comics Group\u201d cover logo.",
+    "keyDetails": "Third appearance of the Sentinels. Third use of the bold “Marvel Comics Group” cover logo.",
     "credits": "Stan Lee story. Werner Roth and Dick Ayers art. Jack Kirby cover and layouts.",
     "presentation": "A high-grade Silver Age example with vivid yellow cover color, sharp registration, and a commanding Sentinel cover.",
     "images": [
@@ -189,11 +205,15 @@
         "alt": "X-Men #16 CGC 8.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "3rd Sentinels",
       "Kirby Cover"
-    ]
+    ],
+    "curatorNotes": [
+      "Well-centered cover with clean borders and strong registration.",
+      "Presents better than many comparable copies."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-20-cgc-92-0012624003",
@@ -228,11 +248,15 @@
         "alt": "X-Men #20 CGC 9.2 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "CGC 9.2",
       "Lucifer Story"
-    ]
+    ],
+    "curatorNotes": [
+      "Exceptional wrap, centering, and overall visual balance.",
+      "A premium-presenting Silver Age copy."
+    ],
+    "curatorsPick": true
   },
   {
     "slug": "x-men-22-cgc-85-4564013001",
@@ -267,11 +291,15 @@
         "alt": "X-Men #22 CGC 8.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "CGC 8.5",
       "Count Nefaria"
-    ]
+    ],
+    "curatorNotes": [
+      "Pleasing color and clean registration.",
+      "An attractive example with balanced overall presentation."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-39-cgc-92-4681900015",
@@ -306,11 +334,15 @@
         "alt": "X-Men #39 CGC 9.2 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "White Pages",
       "New Costumes"
-    ]
+    ],
+    "curatorNotes": [
+      "Crisp centering and vibrant inks create exceptional eye appeal.",
+      "The cover displays with immediate visual impact."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-21-cgc-90-4715641018",
@@ -345,10 +377,14 @@
         "alt": "X-Men #21 CGC 9.0 White Pages back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "Lucifer Appearance"
-    ]
+    ],
+    "curatorNotes": [
+      "Beautifully balanced cover with excellent manufacturing quality.",
+      "White pages enhance an already impressive presentation."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-101-cgc-94-4561572016",
@@ -383,10 +419,14 @@
         "alt": "X-Men #101 CGC 9.4 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "Origin and first appearance of Phoenix"
-    ]
+    ],
+    "curatorNotes": [
+      "Exceptional color, centering, and overall presentation.",
+      "A showcase copy selected for premium display quality."
+    ],
+    "curatorsPick": true
   },
   {
     "slug": "x-men-12-cgc-70",
@@ -421,10 +461,14 @@
         "alt": "X-Men #12 CGC 7.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "Origin and first appearance of the Juggernaut"
-    ]
+    ],
+    "curatorNotes": [
+      "Rich, vibrant reds create excellent visual impact.",
+      "Strong manufacturing characteristics make this a particularly attractive 7.0."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-141-cgc-94",
@@ -442,7 +486,7 @@
     "badge": "New Arrival",
     "featured": false,
     "arrivalOrder": 13,
-    "keyDetails": "\u201cDays of Future Past\u201d Part 1; Mystique and Brotherhood of Evil Mutants appearances.",
+    "keyDetails": "“Days of Future Past” Part 1; Mystique and Brotherhood of Evil Mutants appearances.",
     "credits": "Chris Claremont story. John Byrne and Terry Austin art.",
     "presentation": "A carefully selected certified copy with clear front-and-back photography for close inspection.",
     "images": [
@@ -459,10 +503,14 @@
         "alt": "X-Men #141 CGC 9.4 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
-      "\u201cDays of Future Past\u201d Part 1"
-    ]
+      "“Days of Future Past” Part 1"
+    ],
+    "curatorNotes": [
+      "Crisp centering and vibrant color.",
+      "An outstanding display copy with strong visual balance."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-22-cgc-90",
@@ -497,10 +545,14 @@
         "alt": "X-Men #22 CGC 9.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "Count Nefaria and the Maggia appear"
-    ]
+    ],
+    "curatorNotes": [
+      "Superior centering and outstanding cover presentation.",
+      "One of the better-looking copies encountered in this grade."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-42-cgc-85-4661653017",
@@ -535,10 +587,14 @@
         "alt": "X-Men #42 CGC 8.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "Death of Professor X"
-    ]
+    ],
+    "curatorNotes": [
+      "Balanced centering and bright cover color.",
+      "A strong, highly collectible presentation."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-43-cgc-94",
@@ -573,10 +629,14 @@
         "alt": "X-Men #43 CGC 9.4 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "Magneto, Toad, Quicksilver and Scarlet Witch appearances"
-    ]
+    ],
+    "curatorNotes": [
+      "Clean registration and attractive gloss.",
+      "Excellent manufacturing quality gives this copy a premium appearance."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-43-cgc-96-4746536004",
@@ -611,10 +671,14 @@
         "alt": "X-Men #43 CGC 9.6 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "Magneto, Toad, Quicksilver and Scarlet Witch appearances"
-    ]
+    ],
+    "curatorNotes": [
+      "Outstanding centering, color, and visual balance.",
+      "An elite presentation with virtually no manufacturing distraction."
+    ],
+    "curatorsPick": true
   },
   {
     "slug": "x-men-48-cgc-80-4701256021",
@@ -649,10 +713,14 @@
         "alt": "X-Men #48 CGC 8.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "Quasimodo appearance"
-    ]
+    ],
+    "curatorNotes": [
+      "Good overall balance and attractive cover presentation.",
+      "Manufacturing characteristics are consistent with the issue."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-48-cgc-90-4689887007",
@@ -687,10 +755,14 @@
         "alt": "X-Men #48 CGC 9.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "Quasimodo appearance"
-    ]
+    ],
+    "curatorNotes": [
+      "Outstanding wrap with rich, vivid color.",
+      "One of the strongest-presenting copies in the collection."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-49-cgc-75-4035496018",
@@ -725,10 +797,14 @@
         "alt": "X-Men #49 CGC 7.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "First appearance of Polaris"
-    ]
+    ],
+    "curatorNotes": [
+      "Balanced centering with pleasing color and registration.",
+      "Selected for presentation rather than grade alone."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-50-cgc-75-3695600017",
@@ -763,10 +839,14 @@
         "alt": "X-Men #50 CGC 7.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "Second appearance of Polaris"
-    ]
+    ],
+    "curatorNotes": [
+      "Near-perfect wrap on an issue frequently found with substantial miswraps.",
+      "The unusually strong manufacturing quality makes this copy especially desirable."
+    ],
+    "curatorsPick": true
   },
   {
     "slug": "x-men-50-cgc-90-4691218009",
@@ -801,10 +881,14 @@
         "alt": "X-Men #50 CGC 9.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Exceptional",
     "cardChips": [
       "Second appearance of Polaris"
-    ]
+    ],
+    "curatorNotes": [
+      "Exceptional manufacturing quality and premium visual presentation.",
+      "A standout example of a notoriously difficult issue to find well wrapped."
+    ],
+    "curatorsPick": true
   },
   {
     "slug": "x-men-51-cgc-80",
@@ -839,10 +923,14 @@
         "alt": "X-Men #51 CGC 8.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "First appearance of Erik the Red"
-    ]
+    ],
+    "curatorNotes": [
+      "Well-balanced presentation with strong cover color.",
+      "A clean and attractive Silver Age example."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-52-cgc-80-2090241004",
@@ -877,10 +965,14 @@
         "alt": "X-Men #52 CGC 8.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "First full appearance of Erik the Red"
-    ]
+    ],
+    "curatorNotes": [
+      "Bright colors and pleasing overall balance.",
+      "Displays better than a typical example at the assigned grade."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-53-cgc-85-4670244016",
@@ -915,10 +1007,14 @@
         "alt": "X-Men #53 CGC 8.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "Barry Windsor-Smith artwork"
-    ]
+    ],
+    "curatorNotes": [
+      "Excellent registration and balanced centering.",
+      "The manufacturing quality produces strong overall eye appeal."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-54-cgc-80-0240327021",
@@ -953,10 +1049,14 @@
         "alt": "X-Men #54 CGC 8.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "First appearance of Alex Summers and the Living Pharaoh"
-    ]
+    ],
+    "curatorNotes": [
+      "Clean presentation with solid manufacturing characteristics.",
+      "Pleasing balance makes this an attractive display copy."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-55-cgc-80-4670244018",
@@ -991,10 +1091,14 @@
         "alt": "X-Men #55 CGC 8.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "Alex Summers discovers he is a mutant"
-    ]
+    ],
+    "curatorNotes": [
+      "Strong color with good visual balance.",
+      "A clean-presenting example for the grade."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-56-cgc-70-4670244019",
@@ -1029,10 +1133,14 @@
         "alt": "X-Men #56 CGC 7.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "First appearance of the Living Monolith"
-    ]
+    ],
+    "curatorNotes": [
+      "Balanced, honest presentation without a dominant visual distraction.",
+      "An attractive copy that displays consistently across the cover."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-58-cgc-75-4590628007",
@@ -1067,10 +1175,14 @@
         "alt": "X-Men #58 CGC 7.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "First appearance of Havok in costume"
-    ]
+    ],
+    "curatorNotes": [
+      "Well-centered cover with bright inks.",
+      "Strong overall display quality for the assigned grade."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-59-cgc-80",
@@ -1105,10 +1217,14 @@
         "alt": "X-Men #59 CGC 8.0 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "Sentinels appearance"
-    ]
+    ],
+    "curatorNotes": [
+      "Clean cover presentation with solid manufacturing quality.",
+      "An attractive, well-balanced example."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-60-cgc-85-4671183023",
@@ -1143,10 +1259,14 @@
         "alt": "X-Men #60 CGC 8.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Strong",
     "cardChips": [
       "Origin and first appearance of Sauron"
-    ]
+    ],
+    "curatorNotes": [
+      "Excellent centering and vivid cover color.",
+      "The combination creates clearly above-average visual appeal."
+    ],
+    "curatorsPick": false
   },
   {
     "slug": "x-men-64-cgc-75",
@@ -1181,9 +1301,13 @@
         "alt": "X-Men #64 CGC 7.5 back cover and CGC label"
       }
     ],
-    "eyeAppeal": "Average",
     "cardChips": [
       "First appearance of Sunfire"
-    ]
+    ],
+    "curatorNotes": [
+      "Pleasing balance with strong color presentation.",
+      "A very attractive late Silver Age example."
+    ],
+    "curatorsPick": false
   }
 ]
